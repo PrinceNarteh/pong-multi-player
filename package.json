@@ -1,0 +1,13 @@
+{
+  "name": "pong-multi-player",
+  "version": "1.0.0",
+  "description": "A simple multi player pong game build with NodeJS and Socket.io",
+  "main": "server.js",
+  "repository": "https://github.com/PrinceNarteh/pong-multi-player.git",
+  "author": "Prince Narteh <prinarteh@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.3",
+    "socket.io": "^4.4.1"
+  }
+}
