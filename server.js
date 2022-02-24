@@ -7,10 +7,10 @@ const io = new Server(server);
 
 const PORT = process.env.PORT || 4000;
 
-server.listen(PORT, () => {
-  console.log(`🚀 Server up and running on port ${PORT}`);
+io.on("connection", (socket) => {
+  console.log("User connected...");
 });
 
-io.on("connection", (socket) => {
-  socket.emit("Hello");
+server.listen(PORT, () => {
+  console.log(`🚀 Server up and running on port ${PORT}`);
 });
